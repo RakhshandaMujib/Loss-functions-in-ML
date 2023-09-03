@@ -82,8 +82,7 @@ $$
 
 The softmax activation function is used in the output layer for multi-class classification:
 
-\[
-\text{softmax}(z)_i = \frac{e^{z_i}}{\sum_{j=1}^{C}e^{z_j}}
-\]
-
+$$
+\text{softmax}(x_{i}) = \frac{\exp(x_{i})}{\sum_{j} \exp(x_{j})}
+$$
 - **Common Use:** Converts raw scores (logits) into a probability distribution over multiple classes.
