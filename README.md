@@ -1,8 +1,3 @@
-# Loss-functions-in-ML
-Certainly, here's a Medium-style article on non-linear activation functions, properly formatted:
-
----
-
 # Understanding Non-Linear Activation Functions in Neural Networks
 
 Activation functions are a crucial component of artificial neural networks. They introduce non-linearity into the models, allowing them to capture complex relationships in data. In this article, we'll explore various non-linear activation functions commonly used in neural networks, their properties, and when to use them.
@@ -11,7 +6,9 @@ Activation functions are a crucial component of artificial neural networks. They
 
 The sigmoid activation function is defined as:
 
-\[ \text{sigmoid}(z) = \frac{1}{1 + e^{-z}} \]
+$$
+\text{sigmoid}(z) = \frac{1}{1 + e^{-z}}
+$$
 
 - **Range:** (0, 1)
 - **Common Use:** Often used in the last layer for binary classification, where it maps the linear activation to a probability range.
