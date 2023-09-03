@@ -17,9 +17,9 @@ $$
 
 The hyperbolic tangent activation function is defined as:
 
-$$
-\text{tanh}(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}
-$$
+\[
+\text{softmax}(z)_i = \frac{e^{z_i}}{\sum_{j=1}^{C}e^{z_j}}
+\]
 
 - **Range:** (-1, 1)
 - **Common Use:** Suitable for hidden layers, it performs better than sigmoid but still suffers from the vanishing gradient problem.
