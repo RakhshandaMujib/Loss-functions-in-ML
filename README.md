@@ -17,7 +17,9 @@ $$
 
 The hyperbolic tangent activation function is defined as:
 
-\[ \text{tanh}(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}} \]
+$$
+\text{tanh}(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}
+$$
 
 - **Range:** (-1, 1)
 - **Common Use:** Suitable for hidden layers, it performs better than sigmoid but still suffers from the vanishing gradient problem.
@@ -26,7 +28,9 @@ The hyperbolic tangent activation function is defined as:
 
 The ReLU activation function is defined as:
 
-\[ \text{relu}(z) = \max(0, z) \]
+$$
+\text{relu}(z) = \max(0, z)
+$$
 
 - **Range:** [0, ∞)
 - **Common Use:** Highly popular for hidden layers due to simplicity and efficiency. However, it can suffer from the "dying ReLU" problem.
@@ -35,7 +39,9 @@ The ReLU activation function is defined as:
 
 The leaky ReLU activation function is defined as:
 
-\[ \text{leaky\_relu}(z) = \max(Lz, z) \]
+$$
+\text{leaky\_relu}(z) = \max(Lz, z)
+$$
 
 - **Range:** (-∞, ∞)
 - **Common Use:** Helps solve the dying ReLU problem by introducing a small slope (\(L\)) for negative inputs.
@@ -44,7 +50,9 @@ The leaky ReLU activation function is defined as:
 
 The parameterized ReLU activation function is similar to leaky ReLU but with the slope (\(L\)) learned during training.
 
-\[ \text{prelu}(z) = \max(Lz, z) \]
+$$
+\text{prelu}(z) = \max(Lz, z)
+$$
 
 - **Range:** (-∞, ∞)
 
@@ -52,7 +60,9 @@ The parameterized ReLU activation function is similar to leaky ReLU but with the
 
 The ELU activation function is defined as:
 
-\[ \text{elu}(z) = \max(L(e^z - 1), z) \]
+$$
+\text{elu}(z) = \max(L(e^z - 1), z)
+$$
 
 - **Range:** (-∞, ∞)
 - **Advantage:** Smoother than ReLU for negative values.
@@ -61,7 +71,9 @@ The ELU activation function is defined as:
 
 The SELU activation function is similar to ELU but includes a scaling factor (\(S\)).
 
-\[ \text{selu}(z) = S \cdot \max(L(e^z - 1), z) \]
+$$
+\text{selu}(z) = S \cdot \max(L(e^z - 1), z)
+$$
 
 - **Range:** (-∞, ∞)
 - **Advantage:** Addresses vanishing-exploding gradient problems, but requires specific conditions on network architecture.
@@ -70,6 +82,8 @@ The SELU activation function is similar to ELU but includes a scaling factor (\(
 
 The softmax activation function is used in the output layer for multi-class classification:
 
-\[ \text{softmax}(z)_i = \frac{e^{z_i}}{\sum_{j=1}^{C}e^{z_j}} \]
+$$
+\text{softmax}(z)_i = \frac{e^{z_i}}{\sum_{j=1}^{C}e^{z_j}}
+$$
 
 - **Common Use:** Converts raw scores (logits) into a probability distribution over multiple classes.
