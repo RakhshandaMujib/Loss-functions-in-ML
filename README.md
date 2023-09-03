@@ -44,7 +44,7 @@ $$
 $$
 
 - **Range:** (-∞, ∞)
-- **Common Use:** Helps solve the dying ReLU problem by introducing a small slope (\(L\)) for negative inputs.
+- **Common Use:** Helps solve the dying ReLU problem by introducing a small slope (\(L\)) (aka "leak") for negative inputs.
 
 ## 5. Parameterized ReLU (PReLU) Activation
 
@@ -85,4 +85,6 @@ The softmax activation function is used in the output layer for multi-class clas
 $$
 \text{softmax}(x_{i}) = \frac{\exp(x_{i})}{\sum_{j} \exp(x_{j})}
 $$
+
+- **Range:** [0, 1]
 - **Common Use:** Converts raw scores (logits) into a probability distribution over multiple classes.
