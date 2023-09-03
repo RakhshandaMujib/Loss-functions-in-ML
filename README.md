@@ -40,7 +40,7 @@ $$
 The leaky ReLU activation function is defined as:
 
 $$
-\text{leaky\_relu}(z) = \max(Lz, z)
+\text{leaky_relu}(z) = \max(Lz, z)
 $$
 
 - **Range:** (-∞, ∞)
