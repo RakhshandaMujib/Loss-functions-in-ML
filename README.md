@@ -5,7 +5,7 @@ Loss functions are a critical component of machine learning models. They quantif
 **Note on Terminology:**
 In the realm of Machine Learning, the terms "loss" and "cost" are often used interchangeably. However, adhering to the distinction outlined by Andrew Ng, it's valuable to clarify their roles: 
 
-- We compute the "loss" for an individual example (i denoted by the subscript 'i'), representing how far off the model's prediction ($a_i$) is from the true target ($$y_i$$) for that single instance.
+- We compute the "loss" for an individual example (i denoted by the subscript 'i'), representing how far off the model's prediction ($a_i$) is from the true target ($y_i$) for that single instance.
 - The "cost" is computed for the entire training dataset, usually by taking the mean (average) of all the individual losses.
 
 The methods provided in this repository are designed to calculate the "loss" for each training example. To determine the "cost" for your model, you can easily obtain it by calculating the mean of all these individual losses. This clarification ensures consistency in terminology and its usage throughout the library.
