@@ -6,7 +6,7 @@ Loss functions are a critical component of machine learning models. They quantif
 
 The Mean Squared Error (MSE) loss function is defined as:
 
-$$ \text{mean__squared__error}(y, \hat{y}) = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y_i})^2 $$
+$$ \text{mean-squared-error}(y, \hat{y}) = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y_i})^2 $$
 
 - **Suitable for:** Regression tasks
 - **Advantage:** Sensitive to the magnitude of errors.
@@ -15,7 +15,7 @@ $$ \text{mean__squared__error}(y, \hat{y}) = \frac{1}{n}\sum_{i=1}^{n}(y_i - \ha
 
 The Mean Absolute Error (MAE) loss function is defined as:
 
-$$ \text{mean_absolute_error}(y, \hat{y}) = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y_i}| $$
+$$ \text{mean-absolute-error}(y, \hat{y}) = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y_i}| $$
 
 - **Suitable for:** Regression tasks
 - **Advantage:** Robust to outliers.
@@ -36,7 +36,7 @@ $$ \text{huber}(y, \hat{y}) = \begin{cases}
 
 The Binary Cross-Entropy (BCE) loss function is used for binary classification:
 
-$$ \text{log_loss}(y, \hat{y}) = -\frac{1}{n}\sum_{i=1}^{n}(y_i \log(\hat{y_i}) + (1-y_i)\log(1-\hat{y_i})) $$
+$$ \text{log-loss}(y, \hat{y}) = -\frac{1}{n}\sum_{i=1}^{n}(y_i \log(\hat{y_i}) + (1-y_i)\log(1-\hat{y_i})) $$
 
 - **Suitable for:** Binary classification tasks
 - **Advantage:** Measures the dissimilarity between predicted probabilities and true labels.
@@ -45,7 +45,7 @@ $$ \text{log_loss}(y, \hat{y}) = -\frac{1}{n}\sum_{i=1}^{n}(y_i \log(\hat{y_i}) 
 
 The Categorical Cross-Entropy (CCE) loss function is used for multi-class classification:
 
-$$ \text{categorical_cross_entropy}(y, \hat{y}) = -\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{K}y_{ij} \log(\hat{y_{ij}}) $$
+$$ \text{categorical-cross-entropy}(y, \hat{y}) = -\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{K}y_{ij} \log(\hat{y_{ij}}) $$
 
 - **Suitable for:** Multi-class classification tasks
 - **Advantage:** Measures the dissimilarity between predicted class probabilities and true class labels.
@@ -54,7 +54,7 @@ $$ \text{categorical_cross_entropy}(y, \hat{y}) = -\frac{1}{n}\sum_{i=1}^{n}\sum
 
 The Sparse Categorical Cross-Entropy (SCCE) loss function is used for multi-class classification with integer target labels (not one-hot encoded):
 
-$$ \text{sparse_categorical_loss}(y_{\text{index}}, \hat{y}) = -\log(\hat{y}_{\text{index}}) $$
+$$ \text{sparse-categorical-loss}(y_{\text{index}}, \hat{y}) = -\log(\hat{y}_{\text{index}}) $$
 
 - **Suitable for:** Multi-class classification tasks with integer target labels.
 - **Advantage:** Measures the dissimilarity between predicted class probabilities and true class labels without the need for one-hot encoding.
