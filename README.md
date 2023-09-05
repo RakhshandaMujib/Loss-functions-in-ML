@@ -6,7 +6,7 @@ Loss functions are a critical component of machine learning models. They quantif
 
 The Mean Squared Error (MSE) loss function is defined as:
 
-$$ \text{mean_squared_error}(y, \hat{y}) = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y_i})^2 $$
+$$ \text{mean__squared__error}(y, \hat{y}) = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y_i})^2 $$
 
 - **Suitable for:** Regression tasks
 - **Advantage:** Sensitive to the magnitude of errors.
