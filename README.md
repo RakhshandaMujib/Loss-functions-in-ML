@@ -82,7 +82,3 @@ mse_loss = np.mean(RegressionLoss.squared_error(true_values, predicted_values))
 
 # Calculate BCE loss
 bce_loss = np.mean(ClassificationLoss.binary_cross_entropy(true_labels, predicted_probs))
-
----
-
-Remove the hat and write a_i instead
