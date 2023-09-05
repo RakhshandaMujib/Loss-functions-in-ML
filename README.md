@@ -18,7 +18,7 @@ $$
 The hyperbolic tangent activation function is defined as:
 
 \[
-\text{softmax}(z)_i = \frac{e^{z_i}}{\sum_{j=1}^{C}e^{z_j}}
+\text{tanh}(z) = \frac{e^{z} - e^{-z}}{e^{z} + e^{-z}}
 \]
 
 - **Range:** (-1, 1)
