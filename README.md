@@ -45,7 +45,7 @@ $$ \text{huber}(y_i, a_i) = \begin{cases}
 
 The Binary Cross-Entropy (BCE) loss function is used for binary classification:
 
-$$ \text{log-loss}(y_i, a_i) = -\frac{1}{n}\sum_{i=1}^{n}(y_i \log(a_i) + (1-y_i)\log(1-a_i)) $$
+$$ \text{log-loss}(y_i, a_i) = - (y_i \log(a_i) + (1-y_i)\log(1-a_i)) $$
 
 - **Suitable for:** Binary classification tasks
 - **Advantage:** Measures the dissimilarity between predicted probabilities and true labels.
@@ -54,7 +54,9 @@ $$ \text{log-loss}(y_i, a_i) = -\frac{1}{n}\sum_{i=1}^{n}(y_i \log(a_i) + (1-y_i
 
 The Categorical Cross-Entropy (CCE) loss function is used for multi-class classification:
 
-$$ \text{categorical-cross-entropy}(y_i, a_i) = -\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{K}y_{ij} \log(a_{ij}) $$
+$$ \text{categorical-cross-entropy}(y_i, a_i) = -\sum_{j=1}^{C}y_{ij} \log(a_{ij}) $$
+
+where $C$ is the total number of classes.
 
 - **Suitable for:** Multi-class classification tasks
 - **Advantage:** Measures the dissimilarity between predicted class probabilities and true class labels.
